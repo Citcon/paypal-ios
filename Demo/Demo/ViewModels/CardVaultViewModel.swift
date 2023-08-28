@@ -100,4 +100,8 @@ class CardVaultViewModel: ObservableObject, CardVaultDelegate {
         print("error: \(vaultError.errorDescription ?? "")")
         setUpdateSetupTokenFailureResult(vaultError: vaultError)
     }
+
+    func cardDidCancel(_ cardClient: CardClient) {
+        print("Vault Canceled")
+    }
 }

@@ -22,11 +22,13 @@ struct SetUpTokenRequest {
                 "id": customerID
             ],
             "payment_source": [
-                "card": [:],
-                "experience_context": [
-                    "returnUrl": "https://example.com/returnUrl",
-                    "cancelUrl": "https://example.com/returnUrl"
-                ]
+                "card": [
+                    "experience_context": [
+                        "return_url": "https://example.com/successUrl",
+                        "cancel_url": "https://example.com/cancelUrl"
+                    ],
+                    "verification_method": "SCA_ALWAYS"
+                ] as [String: Any]
             ]
         ]
 
