@@ -22,7 +22,13 @@ struct SetUpTokenRequest {
                 "id": customerID
             ],
             "payment_source": [
-                "card": [:]
+                "card": [
+                    "experience_context": [
+                        "return_url": "sdk.ios.paypal://vault/success",
+                        "cancel_url": "sdk.ios.paypal://vault/cancel"
+                    ],
+                    "verification_method": "SCA_ALWAYS"
+                ] as [String: Any]
             ]
         ]
 

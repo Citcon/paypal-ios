@@ -86,7 +86,7 @@ class CardVaultViewModel: ObservableObject, CardVaultDelegate {
     func setUpTokenSuccessResult(vaultResult: CardPayments.CardVaultResult) {
         DispatchQueue.main.async {
             self.state.updateSetupTokenResponse = .loaded(
-                CardVaultState.UpdateSetupTokenResult(id: vaultResult.setupTokenID, status: vaultResult.status)
+                CardVaultState.UpdateSetupTokenResult(id: vaultResult.setupTokenID, deepLinkURL: vaultResult.deepLinkURL)
             )
         }
     }

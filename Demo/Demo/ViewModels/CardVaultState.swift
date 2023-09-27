@@ -6,7 +6,7 @@ struct CardVaultState: Equatable {
     struct UpdateSetupTokenResult: Decodable, Equatable {
 
         var id: String
-        var status: String
+        var deepLinkURL: URL?
     }
 
     var setupToken: SetUpTokenResponse?
