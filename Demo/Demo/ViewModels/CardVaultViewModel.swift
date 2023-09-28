@@ -108,4 +108,19 @@ class CardVaultViewModel: ObservableObject, CardVaultDelegate {
         print("error: \(vaultError.errorDescription ?? "")")
         setUpdateSetupTokenFailureResult(vaultError: vaultError)
     }
+
+    func cardVaultDidCancel(_ cardClient: CardPayments.CardClient) {
+        DispatchQueue.main.async {
+            self.state.updateSetupTokenResponse = .idle
+            self.state.updateSetupToken = nil
+        }
+    }
+
+    func cardVaultThreeDSecureWillLaunch(_ cardClient: CardPayments.CardClient) {
+        print("About to launch 3DS")
+    }
+
+    func cardVaultThreeDSecureDidFinish(_ cardClient: CardPayments.CardClient) {
+        print("Finished 3DS")
+    }
 }
