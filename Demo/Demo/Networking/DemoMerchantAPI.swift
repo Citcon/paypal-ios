@@ -28,10 +28,16 @@ final class DemoMerchantAPI {
             // Different request struct or integration type property
             // in SetUpTokenRequest to conditionally add header
             let request = SetUpTokenRequest(customerID: customerID, paymentSource: paymentSourceType)
+            var assertionHeader: String?
+            if selectedMerchantIntegration == .connectedPath {
+                assertionHeader = try await fetchAssertionHeader()
+            }
+
             let urlRequest = try createSetupTokenUrlRequest(
                 setupTokenRequest: request,
                 environment: DemoSettings.environment,
-                selectedMerchantIntegration: selectedMerchantIntegration
+                selectedMerchantIntegration: selectedMerchantIntegration,
+                assertionHeader: assertionHeader
             )
             
             let data = try await data(for: urlRequest)
@@ -104,9 +110,40 @@ final class DemoMerchantAPI {
             throw URLResponseError.invalidURL
         }
 
-        let urlRequest = buildURLRequest(method: "POST", url: url, body: orderParams)
+        var assertionHeader: String?
+        if selectedMerchantIntegration == .connectedPath {
+            assertionHeader = try await fetchAssertionHeader()
+        }
+        let urlRequest = buildURLRequest(method: "POST", url: url, body: orderParams, assertionHeader: assertionHeader)
+
         let data = try await data(for: urlRequest)
         return try parse(from: data)
+    }
+
+    func fetchAssertionHeader() async throws -> String? {
+        let merchantID = "RVUPSJV3CJXZ6"
+        var clientID: String?
+        var assertionHeader: String?
+
+        clientID = await fetchClientID(environment: DemoSettings.environment, selectedMerchantIntegration: DemoSettings.merchantIntegration)
+        guard let clientID else {
+            return nil
+        }
+        let headerDict = ["alg": "none"]
+        let payloadDict = ["payer_id": merchantID, "iss": clientID ]
+
+        let headerData = try? JSONSerialization.data(withJSONObject: headerDict)
+        let payloadData = try? JSONSerialization.data(withJSONObject: payloadDict)
+
+        guard let headerData, let payloadData else {
+            return nil
+        }
+
+        let headerBase64 = headerData.base64EncodedString()
+        let payloadBase64 = payloadData.base64EncodedString()
+
+        assertionHeader = "\(headerBase64).\(payloadBase64)."
+        return assertionHeader
     }
 
     /// This function replicates a way a merchant may go about patching an order on their server and is not part of the SDK flow.
@@ -139,13 +176,16 @@ final class DemoMerchantAPI {
 
     // MARK: Private methods
 
-    private func buildURLRequest<T>(method: String, url: URL, body: T) -> URLRequest where T: Encodable {
+    private func buildURLRequest<T>(method: String, url: URL, body: T, assertionHeader: String? = nil) -> URLRequest where T: Encodable {
         let encoder = JSONEncoder()
         encoder.keyEncodingStrategy = .convertToSnakeCase
 
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = method
         urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        if let assertionHeader {
+            urlRequest.addValue("\(assertionHeader)", forHTTPHeaderField: "PayPal-Auth-Assertion")
+        }
 
         if let json = try? encoder.encode(body) {
             print(String(data: json, encoding: .utf8) ?? "")
@@ -228,7 +268,8 @@ final class DemoMerchantAPI {
     private func createSetupTokenUrlRequest(
         setupTokenRequest: SetUpTokenRequest,
         environment: Demo.Environment,
-        selectedMerchantIntegration: MerchantIntegration
+        selectedMerchantIntegration: MerchantIntegration,
+        assertionHeader: String? = nil
     ) throws -> URLRequest {
         var completeUrl = environment.baseURL
         completeUrl += selectedMerchantIntegration.path
@@ -243,6 +284,9 @@ final class DemoMerchantAPI {
         request.httpBody = setupTokenRequest.body
         setupTokenRequest.headers.forEach { key, value in
             request.addValue(value, forHTTPHeaderField: key)
+        }
+        if let assertionHeader {
+            request.addValue("\(assertionHeader)", forHTTPHeaderField: "PayPal-Auth-Assertion")
         }
 
         return request
