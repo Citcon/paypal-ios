@@ -29,7 +29,7 @@ final class DemoMerchantAPI {
             // in SetUpTokenRequest to conditionally add header
             let request = SetUpTokenRequest(customerID: customerID, paymentSource: paymentSourceType)
             var assertionHeader: String?
-            if selectedMerchantIntegration == .connectedPath {
+            if selectedMerchantIntegration == .connectedPath4 {
                 assertionHeader = try await fetchAssertionHeader()
             }
 
@@ -51,10 +51,16 @@ final class DemoMerchantAPI {
     func getPaymentToken(setupToken: String, selectedMerchantIntegration: MerchantIntegration) async throws -> PaymentTokenResponse {
         do {
             let request = PaymentTokenRequest(setupToken: setupToken)
+            var assertionHeader: String?
+            // toggle with CP3
+            if selectedMerchantIntegration == .connectedPath4 {
+                assertionHeader = try await fetchAssertionHeader()
+            }
             let urlRequest = try createPaymentTokenUrlRequest(
                 paymentTokenRequest: request,
                 environment: DemoSettings.environment,
-                selectedMerchantIntegration: selectedMerchantIntegration
+                selectedMerchantIntegration: selectedMerchantIntegration,
+                assertionHeader: assertionHeader
             )
             let data = try await data(for: urlRequest)
             return try parse(from: data)
@@ -73,7 +79,12 @@ final class DemoMerchantAPI {
             throw URLResponseError.invalidURL
         }
 
-        let urlRequest = buildURLRequest(method: "POST", url: url, body: EmptyBodyParams())
+        var assertionHeader: String?
+        if DemoSettings.merchantIntegration == .connectedPath4 {
+            assertionHeader = try await fetchAssertionHeader()
+        }
+
+        let urlRequest = buildURLRequest(method: "POST", url: url, body: EmptyBodyParams(), assertionHeader: assertionHeader)
         let data = try await data(for: urlRequest)
         return try parse(from: data)
     }
@@ -83,7 +94,12 @@ final class DemoMerchantAPI {
             throw URLResponseError.invalidURL
         }
         
-        let urlRequest = buildURLRequest(method: "POST", url: url, body: EmptyBodyParams())
+        var assertionHeader: String?
+        if DemoSettings.merchantIntegration == .connectedPath4 {
+            assertionHeader = try await fetchAssertionHeader()
+        }
+
+        let urlRequest = buildURLRequest(method: "POST", url: url, body: EmptyBodyParams(), assertionHeader: assertionHeader)
         let data = try await data(for: urlRequest)
         return try parse(from: data)
     }
@@ -92,8 +108,13 @@ final class DemoMerchantAPI {
         guard let url = buildBaseURL(with: "/orders/\(orderID)/authorize", selectedMerchantIntegration: selectedMerchantIntegration) else {
             throw URLResponseError.invalidURL
         }
-        
-        let urlRequest = buildURLRequest(method: "POST", url: url, body: EmptyBodyParams())
+
+        var assertionHeader: String?
+        if DemoSettings.merchantIntegration == .connectedPath4 {
+            assertionHeader = try await fetchAssertionHeader()
+        }
+
+        let urlRequest = buildURLRequest(method: "POST", url: url, body: EmptyBodyParams(), assertionHeader: assertionHeader)
         let data = try await data(for: urlRequest)
         return try parse(from: data)
     }
@@ -111,7 +132,8 @@ final class DemoMerchantAPI {
         }
 
         var assertionHeader: String?
-        if selectedMerchantIntegration == .connectedPath {
+        // toggle with CP3
+        if selectedMerchantIntegration == .connectedPath4 {
             assertionHeader = try await fetchAssertionHeader()
         }
         let urlRequest = buildURLRequest(method: "POST", url: url, body: orderParams, assertionHeader: assertionHeader)
@@ -295,7 +317,8 @@ final class DemoMerchantAPI {
     private func createPaymentTokenUrlRequest(
         paymentTokenRequest: PaymentTokenRequest,
         environment: Demo.Environment,
-        selectedMerchantIntegration: MerchantIntegration
+        selectedMerchantIntegration: MerchantIntegration,
+        assertionHeader: String? = nil
     ) throws -> URLRequest {
         var completeUrl = environment.baseURL
         completeUrl += selectedMerchantIntegration.path
@@ -310,6 +333,10 @@ final class DemoMerchantAPI {
         request.httpBody = paymentTokenRequest.body
         paymentTokenRequest.headers.forEach { key, value in
             request.addValue(value, forHTTPHeaderField: key)
+        }
+
+        if let assertionHeader {
+            request.addValue("\(assertionHeader)", forHTTPHeaderField: "PayPal-Auth-Assertion")
         }
 
         return request

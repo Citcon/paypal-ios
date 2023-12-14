@@ -1,5 +1,13 @@
 import SwiftUI
 
+func getUsageType() -> String {
+    if  DemoSettings.merchantIntegration == .connectedPath3
+    {
+        return "PLATFORM"
+    }
+    return "MERCHANT"
+}
+
 struct PayPalVaultView: View {
 
     @StateObject var paypalVaultViewModel = PayPalVaultViewModel()
@@ -11,7 +19,7 @@ struct PayPalVaultView: View {
                     CreateSetupTokenView(
                         selectedMerchantIntegration: DemoSettings.merchantIntegration,
                         vaultViewModel: paypalVaultViewModel,
-                        paymentSourceType: PaymentSourceType.paypal(usageType: "MERCHANT")
+                        paymentSourceType: PaymentSourceType.paypal(usageType: getUsageType())
                     )
                     SetupTokenResultView(vaultViewModel: paypalVaultViewModel)
                     if let url = paypalVaultViewModel.state.setupToken?.paypalURL {

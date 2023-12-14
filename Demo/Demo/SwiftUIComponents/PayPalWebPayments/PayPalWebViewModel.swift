@@ -21,7 +21,9 @@ class PayPalWebViewModel: ObservableObject, PayPalWebCheckoutDelegate {
         // TODO: might need to pass in payee as payee object or as auth header
         var vaultPayPalPaymentSource: VaultPayPalPaymentSource?
         if shouldVault {
-            let attributes = Attributes(vault: Vault(storeInVault: "ON_SUCCESS", usageType: "MERCHANT", customerType: "CONSUMER"))
+            // want to toggle usageType
+            // CP3 no auth assertion and usage_type is platform
+            let attributes = Attributes(vault: Vault(storeInVault: "ON_SUCCESS", usageType: getUsageType(), customerType: "CONSUMER"))
             // The returnURL is not used in our mobile SDK, but a required field for create order with PayPal payment source. DTPPCPSDK-1492 to track this issue
             let paypal = VaultPayPal(attributes: attributes, experienceContext: ExperienceContext(returnURL: "https://example.com/returnUrl", cancelURL: "https://example.com/cancelUrl"))
             vaultPayPalPaymentSource = VaultPayPalPaymentSource(paypal: paypal)
