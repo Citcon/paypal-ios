@@ -1,0 +1,4 @@
+framework module PayPalNativePayments {
+  header "PayPalNativePayments-Swift.h"
+  requires objc
+}

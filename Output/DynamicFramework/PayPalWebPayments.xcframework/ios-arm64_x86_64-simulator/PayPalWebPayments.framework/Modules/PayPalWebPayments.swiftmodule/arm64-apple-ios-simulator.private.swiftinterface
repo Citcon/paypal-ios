@@ -1,0 +1,64 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayPalWebPayments
+import AuthenticationServices
+import CorePayments
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct PayPalVaultRequest {
+  public let url: Foundation.URL
+  public let setupTokenID: Swift.String
+  public init(url: Foundation.URL, setupTokenID: Swift.String)
+}
+public struct PayPalVaultResult : Swift.Decodable, Swift.Equatable {
+  public let tokenID: Swift.String
+  public let approvalSessionID: Swift.String
+  public static func == (a: PayPalWebPayments.PayPalVaultResult, b: PayPalWebPayments.PayPalVaultResult) -> Swift.Bool
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_hasMissingDesignatedInitializers public class PayPalWebCheckoutClient : ObjectiveC.NSObject {
+  weak public var vaultDelegate: (any PayPalWebPayments.PayPalVaultDelegate)?
+  weak public var delegate: (any PayPalWebPayments.PayPalWebCheckoutDelegate)?
+  public init(config: CorePayments.CoreConfig)
+  public func start(request: PayPalWebPayments.PayPalWebCheckoutRequest)
+  public func vault(_ vaultRequest: PayPalWebPayments.PayPalVaultRequest)
+  @objc deinit
+}
+extension PayPalWebPayments.PayPalWebCheckoutClient : AuthenticationServices.ASWebAuthenticationPresentationContextProviding {
+  @objc dynamic public func presentationAnchor(for session: AuthenticationServices.ASWebAuthenticationSession) -> AuthenticationServices.ASPresentationAnchor
+}
+public protocol PayPalVaultDelegate : AnyObject {
+  func paypal(_ paypalWebClient: PayPalWebPayments.PayPalWebCheckoutClient, didFinishWithVaultResult paypalVaultResult: PayPalWebPayments.PayPalVaultResult)
+  func paypal(_ paypalWebClient: PayPalWebPayments.PayPalWebCheckoutClient, didFinishWithVaultError vaultError: CorePayments.CoreSDKError)
+  func paypalDidCancel(_ paypalWebClient: PayPalWebPayments.PayPalWebCheckoutClient)
+}
+public protocol PayPalWebCheckoutDelegate : AnyObject {
+  func payPal(_ payPalClient: PayPalWebPayments.PayPalWebCheckoutClient, didFinishWithResult result: PayPalWebPayments.PayPalWebCheckoutResult)
+  func payPal(_ payPalClient: PayPalWebPayments.PayPalWebCheckoutClient, didFinishWithError error: CorePayments.CoreSDKError)
+  func payPalDidCancel(_ payPalClient: PayPalWebPayments.PayPalWebCheckoutClient)
+}
+public struct PayPalWebCheckoutRequest {
+  public let orderID: Swift.String
+  public let fundingSource: PayPalWebPayments.PayPalWebCheckoutFundingSource
+  public init(orderID: Swift.String, fundingSource: PayPalWebPayments.PayPalWebCheckoutFundingSource = .paypal)
+}
+public struct PayPalWebCheckoutResult {
+  public let orderID: Swift.String
+  public let payerID: Swift.String
+}
+public enum PayPalWebCheckoutFundingSource : Swift.String {
+  case paypalCredit
+  case paylater
+  case paypal
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension PayPalWebPayments.PayPalWebCheckoutFundingSource : Swift.Equatable {}
+extension PayPalWebPayments.PayPalWebCheckoutFundingSource : Swift.Hashable {}
+extension PayPalWebPayments.PayPalWebCheckoutFundingSource : Swift.RawRepresentable {}

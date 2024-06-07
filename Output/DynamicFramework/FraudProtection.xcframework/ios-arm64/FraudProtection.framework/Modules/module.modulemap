@@ -1,0 +1,4 @@
+framework module FraudProtection {
+  header "FraudProtection-Swift.h"
+  requires objc
+}

@@ -1,0 +1,4604 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "AuthenticationServices",
+        "printedName": "AuthenticationServices",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "CorePayments",
+        "printedName": "CorePayments",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardClient",
+        "printedName": "CardClient",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any CardPayments.CardDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments0A6ClientC8delegateAA0A8Delegate_pSgvp",
+            "mangledName": "$s12CardPayments0A6ClientC8delegateAA0A8Delegate_pSgvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any CardPayments.CardDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardDelegate",
+                        "printedName": "any CardPayments.CardDelegate",
+                        "usr": "s:12CardPayments0A8DelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A6ClientC8delegateAA0A8Delegate_pSgvg",
+                "mangledName": "$s12CardPayments0A6ClientC8delegateAA0A8Delegate_pSgvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any CardPayments.CardDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardDelegate",
+                        "printedName": "any CardPayments.CardDelegate",
+                        "usr": "s:12CardPayments0A8DelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A6ClientC8delegateAA0A8Delegate_pSgvs",
+                "mangledName": "$s12CardPayments0A6ClientC8delegateAA0A8Delegate_pSgvs",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A6ClientC8delegateAA0A8Delegate_pSgvM",
+                "mangledName": "$s12CardPayments0A6ClientC8delegateAA0A8Delegate_pSgvM",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "vaultDelegate",
+            "printedName": "vaultDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any CardPayments.CardVaultDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments0A6ClientC13vaultDelegateAA0a5VaultE0_pSgvp",
+            "mangledName": "$s12CardPayments0A6ClientC13vaultDelegateAA0a5VaultE0_pSgvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any CardPayments.CardVaultDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardVaultDelegate",
+                        "printedName": "any CardPayments.CardVaultDelegate",
+                        "usr": "s:12CardPayments0A13VaultDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A6ClientC13vaultDelegateAA0a5VaultE0_pSgvg",
+                "mangledName": "$s12CardPayments0A6ClientC13vaultDelegateAA0a5VaultE0_pSgvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any CardPayments.CardVaultDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardVaultDelegate",
+                        "printedName": "any CardPayments.CardVaultDelegate",
+                        "usr": "s:12CardPayments0A13VaultDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A6ClientC13vaultDelegateAA0a5VaultE0_pSgvs",
+                "mangledName": "$s12CardPayments0A6ClientC13vaultDelegateAA0a5VaultE0_pSgvs",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A6ClientC13vaultDelegateAA0a5VaultE0_pSgvM",
+                "mangledName": "$s12CardPayments0A6ClientC13vaultDelegateAA0a5VaultE0_pSgvM",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardClient",
+                "printedName": "CardPayments.CardClient",
+                "usr": "c:@M@CardPayments@objc(cs)CardClient"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CoreConfig",
+                "printedName": "CorePayments.CoreConfig",
+                "usr": "s:12CorePayments0A6ConfigV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12CardPayments0A6ClientC6configAC04CoreB00E6ConfigV_tcfc",
+            "mangledName": "$s12CardPayments0A6ClientC6configAC04CoreB00E6ConfigV_tcfc",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "vault",
+            "printedName": "vault(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CardVaultRequest",
+                "printedName": "CardPayments.CardVaultRequest",
+                "usr": "s:12CardPayments0A12VaultRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12CardPayments0A6ClientC5vaultyyAA0A12VaultRequestVF",
+            "mangledName": "$s12CardPayments0A6ClientC5vaultyyAA0A12VaultRequestVF",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "approveOrder",
+            "printedName": "approveOrder(request:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CardRequest",
+                "printedName": "CardPayments.CardRequest",
+                "usr": "s:12CardPayments0A7RequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12CardPayments0A6ClientC12approveOrder7requestyAA0A7RequestV_tF",
+            "mangledName": "$s12CardPayments0A6ClientC12approveOrder7requestyAA0A7RequestV_tF",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardClient",
+                "printedName": "CardPayments.CardClient",
+                "usr": "c:@M@CardPayments@objc(cs)CardClient"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@CardPayments@objc(cs)CardClient(im)init",
+            "mangledName": "$s12CardPayments0A6ClientCACycfc",
+            "moduleName": "CardPayments",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "presentationAnchor",
+            "printedName": "presentationAnchor(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIWindow",
+                "printedName": "UIKit.UIWindow",
+                "usr": "c:objc(cs)UIWindow"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ASWebAuthenticationSession",
+                "printedName": "AuthenticationServices.ASWebAuthenticationSession",
+                "usr": "c:objc(cs)ASWebAuthenticationSession"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@CardPayments@objc(cs)CardClient(im)presentationAnchorForWebAuthenticationSession:",
+            "mangledName": "$s12CardPayments0A6ClientC18presentationAnchor3forSo8UIWindowCSo26ASWebAuthenticationSessionC_tF",
+            "moduleName": "CardPayments",
+            "objc_name": "presentationAnchorForWebAuthenticationSession:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@CardPayments@objc(cs)CardClient",
+        "mangledName": "$s12CardPayments0A6ClientC",
+        "moduleName": "CardPayments",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "CorePayments",
+        "printedName": "CorePayments",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "CorePayments",
+        "printedName": "CorePayments",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "CorePayments",
+        "printedName": "CorePayments",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardResult",
+        "printedName": "CardResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "orderID",
+            "printedName": "orderID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments0A6ResultV7orderIDSSvp",
+            "mangledName": "$s12CardPayments0A6ResultV7orderIDSSvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A6ResultV7orderIDSSvg",
+                "mangledName": "$s12CardPayments0A6ResultV7orderIDSSvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments0A6ResultV6statusSSSgvp",
+            "mangledName": "$s12CardPayments0A6ResultV6statusSSSgvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A6ResultV6statusSSSgvg",
+                "mangledName": "$s12CardPayments0A6ResultV6statusSSSgvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "didAttemptThreeDSecureAuthentication",
+            "printedName": "didAttemptThreeDSecureAuthentication",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments0A6ResultV36didAttemptThreeDSecureAuthenticationSbvp",
+            "mangledName": "$s12CardPayments0A6ResultV36didAttemptThreeDSecureAuthenticationSbvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A6ResultV36didAttemptThreeDSecureAuthenticationSbvg",
+                "mangledName": "$s12CardPayments0A6ResultV36didAttemptThreeDSecureAuthenticationSbvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12CardPayments0A6ResultV",
+        "mangledName": "$s12CardPayments0A6ResultV",
+        "moduleName": "CardPayments",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "CorePayments",
+        "printedName": "CorePayments",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "CorePayments",
+        "printedName": "CorePayments",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardDelegate",
+        "printedName": "CardDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "card",
+            "printedName": "card(_:didFinishWithResult:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CardClient",
+                "printedName": "CardPayments.CardClient",
+                "usr": "c:@M@CardPayments@objc(cs)CardClient"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CardResult",
+                "printedName": "CardPayments.CardResult",
+                "usr": "s:12CardPayments0A6ResultV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12CardPayments0A8DelegateP4card_19didFinishWithResultyAA0A6ClientC_AA0aH0VtF",
+            "mangledName": "$s12CardPayments0A8DelegateP4card_19didFinishWithResultyAA0A6ClientC_AA0aH0VtF",
+            "moduleName": "CardPayments",
+            "genericSig": "<τ_0_0 where τ_0_0 : CardPayments.CardDelegate>",
+            "sugared_genericSig": "<Self where Self : CardPayments.CardDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "card",
+            "printedName": "card(_:didFinishWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CardClient",
+                "printedName": "CardPayments.CardClient",
+                "usr": "c:@M@CardPayments@objc(cs)CardClient"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CoreSDKError",
+                "printedName": "CorePayments.CoreSDKError",
+                "usr": "s:12CorePayments0A8SDKErrorV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12CardPayments0A8DelegateP4card_18didFinishWithErroryAA0A6ClientC_04CoreB00J8SDKErrorVtF",
+            "mangledName": "$s12CardPayments0A8DelegateP4card_18didFinishWithErroryAA0A6ClientC_04CoreB00J8SDKErrorVtF",
+            "moduleName": "CardPayments",
+            "genericSig": "<τ_0_0 where τ_0_0 : CardPayments.CardDelegate>",
+            "sugared_genericSig": "<Self where Self : CardPayments.CardDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cardDidCancel",
+            "printedName": "cardDidCancel(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CardClient",
+                "printedName": "CardPayments.CardClient",
+                "usr": "c:@M@CardPayments@objc(cs)CardClient"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12CardPayments0A8DelegateP13cardDidCancelyyAA0A6ClientCF",
+            "mangledName": "$s12CardPayments0A8DelegateP13cardDidCancelyyAA0A6ClientCF",
+            "moduleName": "CardPayments",
+            "genericSig": "<τ_0_0 where τ_0_0 : CardPayments.CardDelegate>",
+            "sugared_genericSig": "<Self where Self : CardPayments.CardDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cardThreeDSecureWillLaunch",
+            "printedName": "cardThreeDSecureWillLaunch(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CardClient",
+                "printedName": "CardPayments.CardClient",
+                "usr": "c:@M@CardPayments@objc(cs)CardClient"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12CardPayments0A8DelegateP26cardThreeDSecureWillLaunchyyAA0A6ClientCF",
+            "mangledName": "$s12CardPayments0A8DelegateP26cardThreeDSecureWillLaunchyyAA0A6ClientCF",
+            "moduleName": "CardPayments",
+            "genericSig": "<τ_0_0 where τ_0_0 : CardPayments.CardDelegate>",
+            "sugared_genericSig": "<Self where Self : CardPayments.CardDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cardThreeDSecureDidFinish",
+            "printedName": "cardThreeDSecureDidFinish(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CardClient",
+                "printedName": "CardPayments.CardClient",
+                "usr": "c:@M@CardPayments@objc(cs)CardClient"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12CardPayments0A8DelegateP25cardThreeDSecureDidFinishyyAA0A6ClientCF",
+            "mangledName": "$s12CardPayments0A8DelegateP25cardThreeDSecureDidFinishyyAA0A6ClientCF",
+            "moduleName": "CardPayments",
+            "genericSig": "<τ_0_0 where τ_0_0 : CardPayments.CardDelegate>",
+            "sugared_genericSig": "<Self where Self : CardPayments.CardDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:12CardPayments0A8DelegateP",
+        "mangledName": "$s12CardPayments0A8DelegateP",
+        "moduleName": "CardPayments",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Card",
+        "printedName": "Card",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "number",
+            "printedName": "number",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments0A0V6numberSSvp",
+            "mangledName": "$s12CardPayments0A0V6numberSSvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A0V6numberSSvg",
+                "mangledName": "$s12CardPayments0A0V6numberSSvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A0V6numberSSvs",
+                "mangledName": "$s12CardPayments0A0V6numberSSvs",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A0V6numberSSvM",
+                "mangledName": "$s12CardPayments0A0V6numberSSvM",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expirationMonth",
+            "printedName": "expirationMonth",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments0A0V15expirationMonthSSvp",
+            "mangledName": "$s12CardPayments0A0V15expirationMonthSSvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A0V15expirationMonthSSvg",
+                "mangledName": "$s12CardPayments0A0V15expirationMonthSSvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A0V15expirationMonthSSvs",
+                "mangledName": "$s12CardPayments0A0V15expirationMonthSSvs",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A0V15expirationMonthSSvM",
+                "mangledName": "$s12CardPayments0A0V15expirationMonthSSvM",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expirationYear",
+            "printedName": "expirationYear",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments0A0V14expirationYearSSvp",
+            "mangledName": "$s12CardPayments0A0V14expirationYearSSvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A0V14expirationYearSSvg",
+                "mangledName": "$s12CardPayments0A0V14expirationYearSSvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A0V14expirationYearSSvs",
+                "mangledName": "$s12CardPayments0A0V14expirationYearSSvs",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A0V14expirationYearSSvM",
+                "mangledName": "$s12CardPayments0A0V14expirationYearSSvM",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "securityCode",
+            "printedName": "securityCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments0A0V12securityCodeSSvp",
+            "mangledName": "$s12CardPayments0A0V12securityCodeSSvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A0V12securityCodeSSvg",
+                "mangledName": "$s12CardPayments0A0V12securityCodeSSvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A0V12securityCodeSSvs",
+                "mangledName": "$s12CardPayments0A0V12securityCodeSSvs",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A0V12securityCodeSSvM",
+                "mangledName": "$s12CardPayments0A0V12securityCodeSSvM",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cardholderName",
+            "printedName": "cardholderName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments0A0V14cardholderNameSSSgvp",
+            "mangledName": "$s12CardPayments0A0V14cardholderNameSSSgvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A0V14cardholderNameSSSgvg",
+                "mangledName": "$s12CardPayments0A0V14cardholderNameSSSgvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A0V14cardholderNameSSSgvs",
+                "mangledName": "$s12CardPayments0A0V14cardholderNameSSSgvs",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A0V14cardholderNameSSSgvM",
+                "mangledName": "$s12CardPayments0A0V14cardholderNameSSSgvM",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "billingAddress",
+            "printedName": "billingAddress",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CardPayments.Address?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Address",
+                    "printedName": "CardPayments.Address",
+                    "usr": "s:12CardPayments7AddressV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments0A0V14billingAddressAA0D0VSgvp",
+            "mangledName": "$s12CardPayments0A0V14billingAddressAA0D0VSgvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CardPayments.Address?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Address",
+                        "printedName": "CardPayments.Address",
+                        "usr": "s:12CardPayments7AddressV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A0V14billingAddressAA0D0VSgvg",
+                "mangledName": "$s12CardPayments0A0V14billingAddressAA0D0VSgvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CardPayments.Address?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Address",
+                        "printedName": "CardPayments.Address",
+                        "usr": "s:12CardPayments7AddressV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A0V14billingAddressAA0D0VSgvs",
+                "mangledName": "$s12CardPayments0A0V14billingAddressAA0D0VSgvs",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A0V14billingAddressAA0D0VSgvM",
+                "mangledName": "$s12CardPayments0A0V14billingAddressAA0D0VSgvM",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expiry",
+            "printedName": "expiry",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments0A0V6expirySSvp",
+            "mangledName": "$s12CardPayments0A0V6expirySSvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "AccessControl",
+              "Documentation",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A0V6expirySSvg",
+                "mangledName": "$s12CardPayments0A0V6expirySSvg",
+                "moduleName": "CardPayments",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(number:expirationMonth:expirationYear:securityCode:cardholderName:billingAddress:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Card",
+                "printedName": "CardPayments.Card",
+                "usr": "s:12CardPayments0A0V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CardPayments.Address?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Address",
+                    "printedName": "CardPayments.Address",
+                    "usr": "s:12CardPayments7AddressV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12CardPayments0A0V6number15expirationMonth0D4Year12securityCode14cardholderName14billingAddressACSS_S4SSgAA0L0VSgtcfc",
+            "mangledName": "$s12CardPayments0A0V6number15expirationMonth0D4Year12securityCode14cardholderName14billingAddressACSS_S4SSgAA0L0VSgtcfc",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12CardPayments0A0V6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s12CardPayments0A0V6encode2toys7Encoder_p_tKF",
+            "moduleName": "CardPayments",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12CardPayments0A0V",
+        "mangledName": "$s12CardPayments0A0V",
+        "moduleName": "CardPayments",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "CorePayments",
+        "printedName": "CorePayments",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardVaultResult",
+        "printedName": "CardVaultResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "setupTokenID",
+            "printedName": "setupTokenID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments0A11VaultResultV12setupTokenIDSSvp",
+            "mangledName": "$s12CardPayments0A11VaultResultV12setupTokenIDSSvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A11VaultResultV12setupTokenIDSSvg",
+                "mangledName": "$s12CardPayments0A11VaultResultV12setupTokenIDSSvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments0A11VaultResultV6statusSSSgvp",
+            "mangledName": "$s12CardPayments0A11VaultResultV6statusSSSgvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A11VaultResultV6statusSSSgvg",
+                "mangledName": "$s12CardPayments0A11VaultResultV6statusSSSgvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "didAttemptThreeDSecureAuthentication",
+            "printedName": "didAttemptThreeDSecureAuthentication",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments0A11VaultResultV36didAttemptThreeDSecureAuthenticationSbvp",
+            "mangledName": "$s12CardPayments0A11VaultResultV36didAttemptThreeDSecureAuthenticationSbvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A11VaultResultV36didAttemptThreeDSecureAuthenticationSbvg",
+                "mangledName": "$s12CardPayments0A11VaultResultV36didAttemptThreeDSecureAuthenticationSbvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12CardPayments0A11VaultResultV",
+        "mangledName": "$s12CardPayments0A11VaultResultV",
+        "moduleName": "CardPayments",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "CorePayments",
+        "printedName": "CorePayments",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PaymentSource",
+        "printedName": "PaymentSource",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "card",
+            "printedName": "card",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Card",
+                "printedName": "CardPayments.PaymentSource.Card",
+                "usr": "s:12CardPayments13PaymentSourceV0A0V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments13PaymentSourceV4cardAC0A0Vvp",
+            "mangledName": "$s12CardPayments13PaymentSourceV4cardAC0A0Vvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Card",
+                    "printedName": "CardPayments.PaymentSource.Card",
+                    "usr": "s:12CardPayments13PaymentSourceV0A0V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments13PaymentSourceV4cardAC0A0Vvg",
+                "mangledName": "$s12CardPayments13PaymentSourceV4cardAC0A0Vvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Card",
+            "printedName": "Card",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "lastFourDigits",
+                "printedName": "lastFourDigits",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:12CardPayments13PaymentSourceV0A0V14lastFourDigitsSSSgvp",
+                "mangledName": "$s12CardPayments13PaymentSourceV0A0V14lastFourDigitsSSSgvp",
+                "moduleName": "CardPayments",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:12CardPayments13PaymentSourceV0A0V14lastFourDigitsSSSgvg",
+                    "mangledName": "$s12CardPayments13PaymentSourceV0A0V14lastFourDigitsSSSgvg",
+                    "moduleName": "CardPayments",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "brand",
+                "printedName": "brand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:12CardPayments13PaymentSourceV0A0V5brandSSSgvp",
+                "mangledName": "$s12CardPayments13PaymentSourceV0A0V5brandSSSgvp",
+                "moduleName": "CardPayments",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:12CardPayments13PaymentSourceV0A0V5brandSSSgvg",
+                    "mangledName": "$s12CardPayments13PaymentSourceV0A0V5brandSSSgvg",
+                    "moduleName": "CardPayments",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "type",
+                "printedName": "type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:12CardPayments13PaymentSourceV0A0V4typeSSSgvp",
+                "mangledName": "$s12CardPayments13PaymentSourceV0A0V4typeSSSgvp",
+                "moduleName": "CardPayments",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:12CardPayments13PaymentSourceV0A0V4typeSSSgvg",
+                    "mangledName": "$s12CardPayments13PaymentSourceV0A0V4typeSSSgvg",
+                    "moduleName": "CardPayments",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "authenticationResult",
+                "printedName": "authenticationResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CardPayments.AuthenticationResult?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthenticationResult",
+                        "printedName": "CardPayments.AuthenticationResult",
+                        "usr": "s:12CardPayments20AuthenticationResultV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:12CardPayments13PaymentSourceV0A0V20authenticationResultAA014AuthenticationF0VSgvp",
+                "mangledName": "$s12CardPayments13PaymentSourceV0A0V20authenticationResultAA014AuthenticationF0VSgvp",
+                "moduleName": "CardPayments",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "CardPayments.AuthenticationResult?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AuthenticationResult",
+                            "printedName": "CardPayments.AuthenticationResult",
+                            "usr": "s:12CardPayments20AuthenticationResultV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:12CardPayments13PaymentSourceV0A0V20authenticationResultAA014AuthenticationF0VSgvg",
+                    "mangledName": "$s12CardPayments13PaymentSourceV0A0V20authenticationResultAA014AuthenticationF0VSgvg",
+                    "moduleName": "CardPayments",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Card",
+                    "printedName": "CardPayments.PaymentSource.Card",
+                    "usr": "s:12CardPayments13PaymentSourceV0A0V"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:12CardPayments13PaymentSourceV0A0V4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s12CardPayments13PaymentSourceV0A0V4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:12CardPayments13PaymentSourceV0A0V",
+            "mangledName": "$s12CardPayments13PaymentSourceV0A0V",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentSource",
+                "printedName": "CardPayments.PaymentSource",
+                "usr": "s:12CardPayments13PaymentSourceV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12CardPayments13PaymentSourceV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s12CardPayments13PaymentSourceV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CardPayments",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12CardPayments13PaymentSourceV",
+        "mangledName": "$s12CardPayments13PaymentSourceV",
+        "moduleName": "CardPayments",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AuthenticationResult",
+        "printedName": "AuthenticationResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "liabilityShift",
+            "printedName": "liabilityShift",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments20AuthenticationResultV14liabilityShiftSSSgvp",
+            "mangledName": "$s12CardPayments20AuthenticationResultV14liabilityShiftSSSgvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments20AuthenticationResultV14liabilityShiftSSSgvg",
+                "mangledName": "$s12CardPayments20AuthenticationResultV14liabilityShiftSSSgvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "threeDSecure",
+            "printedName": "threeDSecure",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CardPayments.ThreeDSecure?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ThreeDSecure",
+                    "printedName": "CardPayments.ThreeDSecure",
+                    "usr": "s:12CardPayments12ThreeDSecureV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments20AuthenticationResultV12threeDSecureAA05ThreeF0VSgvp",
+            "mangledName": "$s12CardPayments20AuthenticationResultV12threeDSecureAA05ThreeF0VSgvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CardPayments.ThreeDSecure?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ThreeDSecure",
+                        "printedName": "CardPayments.ThreeDSecure",
+                        "usr": "s:12CardPayments12ThreeDSecureV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments20AuthenticationResultV12threeDSecureAA05ThreeF0VSgvg",
+                "mangledName": "$s12CardPayments20AuthenticationResultV12threeDSecureAA05ThreeF0VSgvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AuthenticationResult",
+                "printedName": "CardPayments.AuthenticationResult",
+                "usr": "s:12CardPayments20AuthenticationResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12CardPayments20AuthenticationResultV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s12CardPayments20AuthenticationResultV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CardPayments",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12CardPayments20AuthenticationResultV",
+        "mangledName": "$s12CardPayments20AuthenticationResultV",
+        "moduleName": "CardPayments",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ThreeDSecure",
+        "printedName": "ThreeDSecure",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "enrollmentStatus",
+            "printedName": "enrollmentStatus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments12ThreeDSecureV16enrollmentStatusSSSgvp",
+            "mangledName": "$s12CardPayments12ThreeDSecureV16enrollmentStatusSSSgvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments12ThreeDSecureV16enrollmentStatusSSSgvg",
+                "mangledName": "$s12CardPayments12ThreeDSecureV16enrollmentStatusSSSgvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "authenticationStatus",
+            "printedName": "authenticationStatus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments12ThreeDSecureV20authenticationStatusSSSgvp",
+            "mangledName": "$s12CardPayments12ThreeDSecureV20authenticationStatusSSSgvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments12ThreeDSecureV20authenticationStatusSSSgvg",
+                "mangledName": "$s12CardPayments12ThreeDSecureV20authenticationStatusSSSgvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ThreeDSecure",
+                "printedName": "CardPayments.ThreeDSecure",
+                "usr": "s:12CardPayments12ThreeDSecureV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12CardPayments12ThreeDSecureV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s12CardPayments12ThreeDSecureV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CardPayments",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12CardPayments12ThreeDSecureV",
+        "mangledName": "$s12CardPayments12ThreeDSecureV",
+        "moduleName": "CardPayments",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "CorePayments",
+        "printedName": "CorePayments",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "CorePayments",
+        "printedName": "CorePayments",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardVaultDelegate",
+        "printedName": "CardVaultDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "card",
+            "printedName": "card(_:didFinishWithVaultResult:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CardClient",
+                "printedName": "CardPayments.CardClient",
+                "usr": "c:@M@CardPayments@objc(cs)CardClient"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CardVaultResult",
+                "printedName": "CardPayments.CardVaultResult",
+                "usr": "s:12CardPayments0A11VaultResultV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12CardPayments0A13VaultDelegateP4card_013didFinishWithC6ResultyAA0A6ClientC_AA0acI0VtF",
+            "mangledName": "$s12CardPayments0A13VaultDelegateP4card_013didFinishWithC6ResultyAA0A6ClientC_AA0acI0VtF",
+            "moduleName": "CardPayments",
+            "genericSig": "<τ_0_0 where τ_0_0 : CardPayments.CardVaultDelegate>",
+            "sugared_genericSig": "<Self where Self : CardPayments.CardVaultDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "card",
+            "printedName": "card(_:didFinishWithVaultError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CardClient",
+                "printedName": "CardPayments.CardClient",
+                "usr": "c:@M@CardPayments@objc(cs)CardClient"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CoreSDKError",
+                "printedName": "CorePayments.CoreSDKError",
+                "usr": "s:12CorePayments0A8SDKErrorV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12CardPayments0A13VaultDelegateP4card_013didFinishWithC5ErroryAA0A6ClientC_04CoreB00K8SDKErrorVtF",
+            "mangledName": "$s12CardPayments0A13VaultDelegateP4card_013didFinishWithC5ErroryAA0A6ClientC_04CoreB00K8SDKErrorVtF",
+            "moduleName": "CardPayments",
+            "genericSig": "<τ_0_0 where τ_0_0 : CardPayments.CardVaultDelegate>",
+            "sugared_genericSig": "<Self where Self : CardPayments.CardVaultDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cardThreeDSecureDidCancel",
+            "printedName": "cardThreeDSecureDidCancel(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CardClient",
+                "printedName": "CardPayments.CardClient",
+                "usr": "c:@M@CardPayments@objc(cs)CardClient"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12CardPayments0A13VaultDelegateP25cardThreeDSecureDidCancelyyAA0A6ClientCF",
+            "mangledName": "$s12CardPayments0A13VaultDelegateP25cardThreeDSecureDidCancelyyAA0A6ClientCF",
+            "moduleName": "CardPayments",
+            "genericSig": "<τ_0_0 where τ_0_0 : CardPayments.CardVaultDelegate>",
+            "sugared_genericSig": "<Self where Self : CardPayments.CardVaultDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cardThreeDSecureWillLaunch",
+            "printedName": "cardThreeDSecureWillLaunch(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CardClient",
+                "printedName": "CardPayments.CardClient",
+                "usr": "c:@M@CardPayments@objc(cs)CardClient"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12CardPayments0A13VaultDelegateP26cardThreeDSecureWillLaunchyyAA0A6ClientCF",
+            "mangledName": "$s12CardPayments0A13VaultDelegateP26cardThreeDSecureWillLaunchyyAA0A6ClientCF",
+            "moduleName": "CardPayments",
+            "genericSig": "<τ_0_0 where τ_0_0 : CardPayments.CardVaultDelegate>",
+            "sugared_genericSig": "<Self where Self : CardPayments.CardVaultDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cardThreeDSecureDidFinish",
+            "printedName": "cardThreeDSecureDidFinish(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CardClient",
+                "printedName": "CardPayments.CardClient",
+                "usr": "c:@M@CardPayments@objc(cs)CardClient"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12CardPayments0A13VaultDelegateP25cardThreeDSecureDidFinishyyAA0A6ClientCF",
+            "mangledName": "$s12CardPayments0A13VaultDelegateP25cardThreeDSecureDidFinishyyAA0A6ClientCF",
+            "moduleName": "CardPayments",
+            "genericSig": "<τ_0_0 where τ_0_0 : CardPayments.CardVaultDelegate>",
+            "sugared_genericSig": "<Self where Self : CardPayments.CardVaultDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:12CardPayments0A13VaultDelegateP",
+        "mangledName": "$s12CardPayments0A13VaultDelegateP",
+        "moduleName": "CardPayments",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardVaultRequest",
+        "printedName": "CardVaultRequest",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "card",
+            "printedName": "card",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Card",
+                "printedName": "CardPayments.Card",
+                "usr": "s:12CardPayments0A0V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments0A12VaultRequestV4cardAA0A0Vvp",
+            "mangledName": "$s12CardPayments0A12VaultRequestV4cardAA0A0Vvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Card",
+                    "printedName": "CardPayments.Card",
+                    "usr": "s:12CardPayments0A0V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A12VaultRequestV4cardAA0A0Vvg",
+                "mangledName": "$s12CardPayments0A12VaultRequestV4cardAA0A0Vvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "setupTokenID",
+            "printedName": "setupTokenID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments0A12VaultRequestV12setupTokenIDSSvp",
+            "mangledName": "$s12CardPayments0A12VaultRequestV12setupTokenIDSSvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A12VaultRequestV12setupTokenIDSSvg",
+                "mangledName": "$s12CardPayments0A12VaultRequestV12setupTokenIDSSvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(card:setupTokenID:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardVaultRequest",
+                "printedName": "CardPayments.CardVaultRequest",
+                "usr": "s:12CardPayments0A12VaultRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Card",
+                "printedName": "CardPayments.Card",
+                "usr": "s:12CardPayments0A0V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12CardPayments0A12VaultRequestV4card12setupTokenIDAcA0A0V_SStcfc",
+            "mangledName": "$s12CardPayments0A12VaultRequestV4card12setupTokenIDAcA0A0V_SStcfc",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12CardPayments0A12VaultRequestV",
+        "mangledName": "$s12CardPayments0A12VaultRequestV",
+        "moduleName": "CardPayments",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "CorePayments",
+        "printedName": "CorePayments",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SCA",
+        "printedName": "SCA",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "scaAlways",
+            "printedName": "scaAlways",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CardPayments.SCA.Type) -> CardPayments.SCA",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SCA",
+                    "printedName": "CardPayments.SCA",
+                    "usr": "s:12CardPayments3SCAO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CardPayments.SCA.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SCA",
+                        "printedName": "CardPayments.SCA",
+                        "usr": "s:12CardPayments3SCAO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CardPayments3SCAO9scaAlwaysyA2CmF",
+            "mangledName": "$s12CardPayments3SCAO9scaAlwaysyA2CmF",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "scaWhenRequired",
+            "printedName": "scaWhenRequired",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CardPayments.SCA.Type) -> CardPayments.SCA",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SCA",
+                    "printedName": "CardPayments.SCA",
+                    "usr": "s:12CardPayments3SCAO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CardPayments.SCA.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SCA",
+                        "printedName": "CardPayments.SCA",
+                        "usr": "s:12CardPayments3SCAO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CardPayments3SCAO15scaWhenRequiredyA2CmF",
+            "mangledName": "$s12CardPayments3SCAO15scaWhenRequiredyA2CmF",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CardPayments.SCA?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SCA",
+                    "printedName": "CardPayments.SCA",
+                    "usr": "s:12CardPayments3SCAO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12CardPayments3SCAO8rawValueACSgSS_tcfc",
+            "mangledName": "$s12CardPayments3SCAO8rawValueACSgSS_tcfc",
+            "moduleName": "CardPayments",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments3SCAO8rawValueSSvp",
+            "mangledName": "$s12CardPayments3SCAO8rawValueSSvp",
+            "moduleName": "CardPayments",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments3SCAO8rawValueSSvg",
+                "mangledName": "$s12CardPayments3SCAO8rawValueSSvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12CardPayments3SCAO",
+        "mangledName": "$s12CardPayments3SCAO",
+        "moduleName": "CardPayments",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Address",
+        "printedName": "Address",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "addressLine1",
+            "printedName": "addressLine1",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments7AddressV12addressLine1SSSgvp",
+            "mangledName": "$s12CardPayments7AddressV12addressLine1SSSgvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments7AddressV12addressLine1SSSgvg",
+                "mangledName": "$s12CardPayments7AddressV12addressLine1SSSgvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments7AddressV12addressLine1SSSgvs",
+                "mangledName": "$s12CardPayments7AddressV12addressLine1SSSgvs",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments7AddressV12addressLine1SSSgvM",
+                "mangledName": "$s12CardPayments7AddressV12addressLine1SSSgvM",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "addressLine2",
+            "printedName": "addressLine2",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments7AddressV12addressLine2SSSgvp",
+            "mangledName": "$s12CardPayments7AddressV12addressLine2SSSgvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments7AddressV12addressLine2SSSgvg",
+                "mangledName": "$s12CardPayments7AddressV12addressLine2SSSgvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments7AddressV12addressLine2SSSgvs",
+                "mangledName": "$s12CardPayments7AddressV12addressLine2SSSgvs",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments7AddressV12addressLine2SSSgvM",
+                "mangledName": "$s12CardPayments7AddressV12addressLine2SSSgvM",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "locality",
+            "printedName": "locality",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments7AddressV8localitySSSgvp",
+            "mangledName": "$s12CardPayments7AddressV8localitySSSgvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments7AddressV8localitySSSgvg",
+                "mangledName": "$s12CardPayments7AddressV8localitySSSgvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments7AddressV8localitySSSgvs",
+                "mangledName": "$s12CardPayments7AddressV8localitySSSgvs",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments7AddressV8localitySSSgvM",
+                "mangledName": "$s12CardPayments7AddressV8localitySSSgvM",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "region",
+            "printedName": "region",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments7AddressV6regionSSSgvp",
+            "mangledName": "$s12CardPayments7AddressV6regionSSSgvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments7AddressV6regionSSSgvg",
+                "mangledName": "$s12CardPayments7AddressV6regionSSSgvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments7AddressV6regionSSSgvs",
+                "mangledName": "$s12CardPayments7AddressV6regionSSSgvs",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments7AddressV6regionSSSgvM",
+                "mangledName": "$s12CardPayments7AddressV6regionSSSgvM",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "postalCode",
+            "printedName": "postalCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments7AddressV10postalCodeSSSgvp",
+            "mangledName": "$s12CardPayments7AddressV10postalCodeSSSgvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments7AddressV10postalCodeSSSgvg",
+                "mangledName": "$s12CardPayments7AddressV10postalCodeSSSgvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments7AddressV10postalCodeSSSgvs",
+                "mangledName": "$s12CardPayments7AddressV10postalCodeSSSgvs",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments7AddressV10postalCodeSSSgvM",
+                "mangledName": "$s12CardPayments7AddressV10postalCodeSSSgvM",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "countryCode",
+            "printedName": "countryCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments7AddressV11countryCodeSSvp",
+            "mangledName": "$s12CardPayments7AddressV11countryCodeSSvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments7AddressV11countryCodeSSvg",
+                "mangledName": "$s12CardPayments7AddressV11countryCodeSSvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments7AddressV11countryCodeSSvs",
+                "mangledName": "$s12CardPayments7AddressV11countryCodeSSvs",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments7AddressV11countryCodeSSvM",
+                "mangledName": "$s12CardPayments7AddressV11countryCodeSSvM",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(addressLine1:addressLine2:locality:region:postalCode:countryCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Address",
+                "printedName": "CardPayments.Address",
+                "usr": "s:12CardPayments7AddressV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12CardPayments7AddressV12addressLine10D5Line28locality6region10postalCode07countryJ0ACSSSg_A4JSStcfc",
+            "mangledName": "$s12CardPayments7AddressV12addressLine10D5Line28locality6region10postalCode07countryJ0ACSSSg_A4JSStcfc",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Address",
+                "printedName": "CardPayments.Address",
+                "usr": "s:12CardPayments7AddressV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12CardPayments7AddressV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s12CardPayments7AddressV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CardPayments",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12CardPayments7AddressV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s12CardPayments7AddressV6encode2toys7Encoder_p_tKF",
+            "moduleName": "CardPayments",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Address",
+                "printedName": "CardPayments.Address",
+                "usr": "s:12CardPayments7AddressV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Address",
+                "printedName": "CardPayments.Address",
+                "usr": "s:12CardPayments7AddressV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12CardPayments7AddressV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s12CardPayments7AddressV2eeoiySbAC_ACtFZ",
+            "moduleName": "CardPayments",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12CardPayments7AddressV",
+        "mangledName": "$s12CardPayments7AddressV",
+        "moduleName": "CardPayments",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CardPayments"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardRequest",
+        "printedName": "CardRequest",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "orderID",
+            "printedName": "orderID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments0A7RequestV7orderIDSSvp",
+            "mangledName": "$s12CardPayments0A7RequestV7orderIDSSvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A7RequestV7orderIDSSvg",
+                "mangledName": "$s12CardPayments0A7RequestV7orderIDSSvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "card",
+            "printedName": "card",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Card",
+                "printedName": "CardPayments.Card",
+                "usr": "s:12CardPayments0A0V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments0A7RequestV4cardAA0A0Vvp",
+            "mangledName": "$s12CardPayments0A7RequestV4cardAA0A0Vvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Card",
+                    "printedName": "CardPayments.Card",
+                    "usr": "s:12CardPayments0A0V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A7RequestV4cardAA0A0Vvg",
+                "mangledName": "$s12CardPayments0A7RequestV4cardAA0A0Vvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sca",
+            "printedName": "sca",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SCA",
+                "printedName": "CardPayments.SCA",
+                "usr": "s:12CardPayments3SCAO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CardPayments0A7RequestV3scaAA3SCAOvp",
+            "mangledName": "$s12CardPayments0A7RequestV3scaAA3SCAOvp",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SCA",
+                    "printedName": "CardPayments.SCA",
+                    "usr": "s:12CardPayments3SCAO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CardPayments0A7RequestV3scaAA3SCAOvg",
+                "mangledName": "$s12CardPayments0A7RequestV3scaAA3SCAOvg",
+                "moduleName": "CardPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(orderID:card:sca:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardRequest",
+                "printedName": "CardPayments.CardRequest",
+                "usr": "s:12CardPayments0A7RequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Card",
+                "printedName": "CardPayments.Card",
+                "usr": "s:12CardPayments0A0V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SCA",
+                "printedName": "CardPayments.SCA",
+                "hasDefaultArg": true,
+                "usr": "s:12CardPayments3SCAO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12CardPayments0A7RequestV7orderID4card3scaACSS_AA0A0VAA3SCAOtcfc",
+            "mangledName": "$s12CardPayments0A7RequestV7orderID4card3scaACSS_AA0A0VAA3SCAOtcfc",
+            "moduleName": "CardPayments",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12CardPayments0A7RequestV",
+        "mangledName": "$s12CardPayments0A7RequestV",
+        "moduleName": "CardPayments",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClient.swift",
+      "kind": "StringLiteral",
+      "offset": 117,
+      "length": 10,
+      "value": "\"CardPayments.CardClient\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/APIRequests\/ConfirmPaymentSourceRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 308,
+      "length": 16,
+      "value": "\"payment_source\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/APIRequests\/ConfirmPaymentSourceRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 359,
+      "length": 21,
+      "value": "\"application_context\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/APIRequests\/ConfirmPaymentSourceRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 308,
+      "length": 16,
+      "value": "\"payment_source\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/APIRequests\/ConfirmPaymentSourceRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 359,
+      "length": 21,
+      "value": "\"application_context\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/APIRequests\/ConfirmPaymentSourceRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 479,
+      "length": 12,
+      "value": "\"return_url\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/APIRequests\/ConfirmPaymentSourceRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 517,
+      "length": 12,
+      "value": "\"cancel_url\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/APIRequests\/ConfirmPaymentSourceRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 479,
+      "length": 12,
+      "value": "\"return_url\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/APIRequests\/ConfirmPaymentSourceRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 517,
+      "length": 12,
+      "value": "\"cancel_url\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/APIRequests\/ConfirmPaymentSourceRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 879,
+      "length": 16,
+      "value": "\"address_line_1\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/APIRequests\/ConfirmPaymentSourceRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 924,
+      "length": 16,
+      "value": "\"address_line_2\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/APIRequests\/ConfirmPaymentSourceRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 967,
+      "length": 14,
+      "value": "\"admin_area_1\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/APIRequests\/ConfirmPaymentSourceRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1008,
+      "length": 14,
+      "value": "\"admin_area_2\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/APIRequests\/ConfirmPaymentSourceRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 879,
+      "length": 16,
+      "value": "\"address_line_1\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/APIRequests\/ConfirmPaymentSourceRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 924,
+      "length": 16,
+      "value": "\"address_line_2\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/APIRequests\/ConfirmPaymentSourceRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 967,
+      "length": 14,
+      "value": "\"admin_area_1\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/APIRequests\/ConfirmPaymentSourceRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1008,
+      "length": 14,
+      "value": "\"admin_area_2\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/APIRequests\/ConfirmPaymentSourceRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1405,
+      "length": 17,
+      "value": "\":\/\/card\/success\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/APIRequests\/ConfirmPaymentSourceRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1483,
+      "length": 16,
+      "value": "\":\/\/card\/cancel\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "StringLiteral",
+      "offset": 122,
+      "length": 23,
+      "value": "\"CardClientErrorDomain\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 309,
+      "length": 13,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 392,
+      "length": 17,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 519,
+      "length": 20,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 624,
+      "length": 21,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 729,
+      "length": 15,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 808,
+      "length": 21,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 898,
+      "length": 24,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 990,
+      "length": 23,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1083,
+      "length": 25,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 309,
+      "length": 13,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 392,
+      "length": 17,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 519,
+      "length": 20,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 624,
+      "length": 21,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 729,
+      "length": 15,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 808,
+      "length": 21,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 898,
+      "length": 24,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 990,
+      "length": 23,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1083,
+      "length": 25,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 309,
+      "length": 13,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 392,
+      "length": 17,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 519,
+      "length": 20,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 624,
+      "length": 21,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 729,
+      "length": 15,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 808,
+      "length": 21,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 898,
+      "length": 24,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 990,
+      "length": 23,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1083,
+      "length": 25,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "StringLiteral",
+      "offset": 1247,
+      "length": 69,
+      "value": "\"An unknown error has occured. Contact developer.paypal.com\/support.\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "StringLiteral",
+      "offset": 1466,
+      "length": 89,
+      "value": "\"An error occured encoding HTTP request body data. Contact developer.paypal.com\/support.\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "StringLiteral",
+      "offset": 1965,
+      "length": 72,
+      "value": "\"An invalid 3DS URL was returned. Contact developer.paypal.com\/support.\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "StringLiteral",
+      "offset": 2203,
+      "length": 55,
+      "value": "\"No data was returned from update setup token service.\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "StringLiteral",
+      "offset": 2412,
+      "length": 42,
+      "value": "\"An error occurred while vaulting a card.\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/CardClientError.swift",
+      "kind": "StringLiteral",
+      "offset": 2616,
+      "length": 36,
+      "value": "\"GraphQLClient is unexpectedly nil.\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/Models\/SCA.swift",
+      "kind": "StringLiteral",
+      "offset": 170,
+      "length": 12,
+      "value": "\"SCA_ALWAYS\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/Models\/SCA.swift",
+      "kind": "StringLiteral",
+      "offset": 265,
+      "length": 19,
+      "value": "\"SCA_WHEN_REQUIRED\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/Models\/SCA.swift",
+      "kind": "StringLiteral",
+      "offset": 170,
+      "length": 12,
+      "value": "\"SCA_ALWAYS\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/Models\/SCA.swift",
+      "kind": "StringLiteral",
+      "offset": 265,
+      "length": 19,
+      "value": "\"SCA_WHEN_REQUIRED\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/Models\/Address.swift",
+      "kind": "StringLiteral",
+      "offset": 205,
+      "length": 14,
+      "value": "\"admin_area_2\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/Models\/Address.swift",
+      "kind": "StringLiteral",
+      "offset": 242,
+      "length": 14,
+      "value": "\"admin_area_1\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/Models\/Address.swift",
+      "kind": "StringLiteral",
+      "offset": 205,
+      "length": 14,
+      "value": "\"admin_area_2\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPal\/Sources\/CardPayments\/Models\/Address.swift",
+      "kind": "StringLiteral",
+      "offset": 242,
+      "length": 14,
+      "value": "\"admin_area_1\""
+    }
+  ]
+}

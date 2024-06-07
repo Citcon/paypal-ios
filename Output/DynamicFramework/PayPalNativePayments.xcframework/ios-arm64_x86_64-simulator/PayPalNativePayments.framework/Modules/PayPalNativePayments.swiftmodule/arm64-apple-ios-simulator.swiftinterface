@@ -1,0 +1,76 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayPalNativePayments
+import CorePayments
+import Foundation
+import PayPalCheckout
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol PayPalNativeCheckoutDelegate : AnyObject {
+  func paypal(_ payPalClient: PayPalNativePayments.PayPalNativeCheckoutClient, didFinishWithResult result: PayPalNativePayments.PayPalNativeCheckoutResult)
+  func paypal(_ payPalClient: PayPalNativePayments.PayPalNativeCheckoutClient, didFinishWithError error: CorePayments.CoreSDKError)
+  func paypalDidCancel(_ payPalClient: PayPalNativePayments.PayPalNativeCheckoutClient)
+  func paypalWillStart(_ payPalClient: PayPalNativePayments.PayPalNativeCheckoutClient)
+}
+public protocol PayPalNativeShippingDelegate : AnyObject {
+  func paypal(_ payPalClient: PayPalNativePayments.PayPalNativeCheckoutClient, didShippingAddressChange shippingAddress: PayPalNativePayments.PayPalNativeShippingAddress, withAction shippingActions: PayPalNativePayments.PayPalNativePaysheetActions)
+  func paypal(_ payPalClient: PayPalNativePayments.PayPalNativeCheckoutClient, didShippingMethodChange shippingMethod: PayPalNativePayments.PayPalNativeShippingMethod, withAction shippingActions: PayPalNativePayments.PayPalNativePaysheetActions)
+}
+@_hasMissingDesignatedInitializers public class PayPalNativePaysheetActions {
+  public func reject()
+  public func approve()
+  @objc deinit
+}
+public struct PayPalNativeCheckoutRequest {
+  public let orderID: Swift.String
+  public let userAuthenticationEmail: Swift.String?
+  public init(orderID: Swift.String, userAuthenticationEmail: Swift.String? = nil)
+}
+public struct PayPalNativeCheckoutResult {
+  public let orderID: Swift.String
+  public let payerID: Swift.String
+}
+@_hasMissingDesignatedInitializers public class PayPalNativeCheckoutClient {
+  weak public var delegate: (any PayPalNativePayments.PayPalNativeCheckoutDelegate)?
+  weak public var shippingDelegate: (any PayPalNativePayments.PayPalNativeShippingDelegate)?
+  convenience public init(config: CorePayments.CoreConfig)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func start(request: PayPalNativePayments.PayPalNativeCheckoutRequest, presentingViewController: UIKit.UIViewController? = nil) async
+  #endif
+  @objc deinit
+}
+public struct PayPalNativeShippingMethod {
+  public enum DeliveryType : Swift.Int, Swift.CaseIterable, Swift.Codable {
+    case shipping
+    case pickup
+    case none
+    public init?(rawValue: Swift.Int)
+    public typealias AllCases = [PayPalNativePayments.PayPalNativeShippingMethod.DeliveryType]
+    public typealias RawValue = Swift.Int
+    public static var allCases: [PayPalNativePayments.PayPalNativeShippingMethod.DeliveryType] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public let id: Swift.String
+  public let label: Swift.String
+  public let selected: Swift.Bool
+  public let type: PayPalNativePayments.PayPalNativeShippingMethod.DeliveryType
+  public let value: Swift.String?
+  public let currencyCode: Swift.String?
+}
+public struct PayPalNativeShippingAddress {
+  public let addressID: Swift.String?
+  public let adminArea1: Swift.String?
+  public let adminArea2: Swift.String?
+  public let postalCode: Swift.String?
+  public let countryCode: Swift.String?
+}
+extension PayPalNativePayments.PayPalNativeShippingMethod.DeliveryType : Swift.Equatable {}
+extension PayPalNativePayments.PayPalNativeShippingMethod.DeliveryType : Swift.Hashable {}
+extension PayPalNativePayments.PayPalNativeShippingMethod.DeliveryType : Swift.RawRepresentable {}
