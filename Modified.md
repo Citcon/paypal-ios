@@ -16,3 +16,5 @@
         1) paypalcheckout-ios, 1.1.0 -> 1.3.0
     
     3. Demo app, IPHONEOS_DEPLOYMENT_TARGET 15.2 -> 15.0
+    
+    4. OTHER_SWIFT_FLAGS = "-Xfrontend -empty-abi-descriptor" 

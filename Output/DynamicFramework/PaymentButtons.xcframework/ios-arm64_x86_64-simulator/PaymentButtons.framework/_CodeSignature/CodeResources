@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		xeG74xh3DBpi8S4GVtQUmdF6MKU=
+		ljPbGzzUaLdyocQLk+R+46Uf8EQ=
 		</data>
 		<key>Headers/PaymentButtons-Swift.h</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pZz0Q2vwx4l/kYjbInqOqh7mwrw=
+		csH6z27dzWbE1hofwygyehcjhtc=
 		</data>
 		<key>Modules/PaymentButtons.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		cDI0mKgaEjmkJJfdVoLbY6hzrD4=
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/PaymentButtons.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/PaymentButtons.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WZcxK56Hk6CC463VfggXjcXWIEA=
+		Cpl3f9A97J1T2JsOr6Dw4XjCFZY=
 		</data>
 		<key>Modules/PaymentButtons.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		cDI0mKgaEjmkJJfdVoLbY6hzrD4=
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/PaymentButtons.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/PaymentButtons.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7XgpPR8KXmOi0mzyLaRVWMBc+5s=
+		EL9zwB9N8E2m82LKnf3qNdhAOhs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,7 +75,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0tRCclioz3c/RpKrQiggbE5sBFkftPIkT09N6WFen7U=
+			16qfOJxXE8f8cTivwpSL09ra6E3BLnSUyxU7mQrgM+k=
 			</data>
 		</dict>
 		<key>Headers/PaymentButtons-Swift.h</key>
@@ -89,7 +89,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/T8IwTv5Jpz5M/7v4hF0nytcYzNV97zQRt1rZND9prQ=
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/PaymentButtons.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -117,14 +117,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SLPexhzngeKnuv8/g9cP1m/zxbV+6t1B4ZWY/DwtyXo=
+			VFvZvwZiAmRf+JTzeEyZxnYW1ipCdmMvdCyefyhHQ1Y=
 			</data>
 		</dict>
 		<key>Modules/PaymentButtons.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/T8IwTv5Jpz5M/7v4hF0nytcYzNV97zQRt1rZND9prQ=
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/PaymentButtons.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -152,7 +152,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+dKDYAdE/zYRuCjYN2smuBiewLC7Jqdp7XHzvrbVCWQ=
+			qm/Jmd3lAuV1v13DL6cvAm/as8MEnVWaQ6qjd/4u60k=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

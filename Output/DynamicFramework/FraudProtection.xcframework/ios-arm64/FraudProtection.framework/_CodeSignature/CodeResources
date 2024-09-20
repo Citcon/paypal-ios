@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xsm3WTQE4UfebpuVHHs/tIT2azw=
+		7mprn+0ABkcwO3zW1A+QKkfgKe4=
 		</data>
 		<key>Modules/FraudProtection.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		7OQgcgtJooPvzNkFiWm3ED/tK0s=
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/FraudProtection.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/FraudProtection.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		PrKONrtT073hna295o5bs0mGmVk=
+		dFANG3G9YszyI0mFXCdzowQpbaM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -54,7 +54,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cZgzngvRO5Cl6sDG4PF5rDFtR3XeEz+9oGG5X/TBBv8=
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/FraudProtection.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -82,7 +82,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lGTR7EuvotwBAM/tK96Mj57fILY7KGIVUKJVgFXEmb0=
+			9f7t4DV8PcbvK4PV2I7i6Oalo42ug5HIVO/ZLFH3Uu8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8MZrvo/ZLgIsbkdx1CtTAW5IuMQ=
+		87bh9xGX3hnirT+JuWw7kANW3ls=
 		</data>
 		<key>Modules/CardPayments.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		etQSWjTjGYsa2zG85ak4ofz3efQ=
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/CardPayments.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/CardPayments.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		iyWTRe2ulJlfmDBWQ1a9WzN+62k=
+		MiIXlKr1EW0blnX9JcHJ7BErcok=
 		</data>
 		<key>Modules/CardPayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		etQSWjTjGYsa2zG85ak4ofz3efQ=
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/CardPayments.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/CardPayments.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8HNF6Ng9c0O5t0ycndJY1VivPRI=
+		KK2XpL438chDp/NJqO0nYEkH8Vo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -74,7 +74,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			f12U1U5mGASz4G0vZuhcYBPi5enZuYHvJ1wv17Lnb78=
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/CardPayments.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -102,14 +102,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hXSvAV5h49VYDmgMOJyX8rqqHrkM8AR4b711u/C10kI=
+			C6f4NLBEio4sc6sMQLxiisbdOtkClRgLMtsEWEOOPLw=
 			</data>
 		</dict>
 		<key>Modules/CardPayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f12U1U5mGASz4G0vZuhcYBPi5enZuYHvJ1wv17Lnb78=
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/CardPayments.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -137,7 +137,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EnCpCpmGafS0F8E15RzgLThvOacnCYfwWWlWqs1Bv3A=
+			hpT89Bgdtl3Kv+cqGGv9EYVnI4snOKxn8GN+uGfcYtU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

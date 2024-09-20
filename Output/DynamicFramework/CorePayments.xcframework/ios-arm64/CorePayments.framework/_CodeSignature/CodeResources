@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		quo4k5wopkEFhfQun9xlme70z34=
+		UsOCq+EX9j6N9L0mKbBuLkVMSU4=
 		</data>
 		<key>Modules/CorePayments.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		bbPq05T2MccO9kLi5o+F8zAw2Vg=
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/CorePayments.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/CorePayments.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		efeysIjejLI+BsCmwfn3tOYyz4U=
+		Tv4C8iyM+UihLr8Vj3kHik/VuTM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -54,7 +54,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9jKgfQba+9CireYvyWvVB/4RSPJmylxvi7RMixWInRU=
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/CorePayments.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -82,7 +82,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jt269gIRyQGVHZdmS7Y0tDzMZ8o8h9vpSXey04z4T7A=
+			pX9LtCvUGZrFrOTpVsWcdVjOYagrnNBbZP3Vxgoi9Fg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

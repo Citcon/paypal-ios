@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4n48b992ihR9F0CoTpJ7QxbIwvY=
+		xP/MHoniwaLSxvpqbicVTpcUDfI=
 		</data>
 		<key>Modules/PayPalNativePayments.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		sGEQbWNsLM7C6TitxCj9/K/Z7yE=
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/PayPalNativePayments.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/PayPalNativePayments.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		SmRcNwfq3+lS26zXQMAY30svsio=
+		GW1UHFuIm92W0DD8OVlywBQ8WTg=
 		</data>
 		<key>Modules/PayPalNativePayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		sGEQbWNsLM7C6TitxCj9/K/Z7yE=
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/PayPalNativePayments.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/PayPalNativePayments.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hE17ILJ4GL7CKE5kx5vqL4fPRYs=
+		YJev1NNOEeSHbS1Y2bRGI0s2m8Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -74,7 +74,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5uf8GJ6ZWJYwGUipnoPVPZjWGvr0G8LfaDbhIv7mgt0=
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/PayPalNativePayments.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -102,14 +102,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AN4i9zbShwIqu3wGGomVKHXkJRpjwPD90Cjh10ULMvE=
+			bRAEv0TsNUkyuRKzuCdReYTC4nM3A0VHZrd4GjnF3zY=
 			</data>
 		</dict>
 		<key>Modules/PayPalNativePayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5uf8GJ6ZWJYwGUipnoPVPZjWGvr0G8LfaDbhIv7mgt0=
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/PayPalNativePayments.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -137,7 +137,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lHv7gp6Tt8zO8bEdX9wxjFZNKkCGtcmzroRW4x0U2mE=
+			tcgcQxNZ9Hs0eabyLVbGrP2Rluxv6P4KwAY4AinUF5s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

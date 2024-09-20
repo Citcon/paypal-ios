@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		t7/yo40Z0kXwA3FatLNFu9MWIao=
+		sLOHwcFp4jAPVSAKMzZThbrPaJk=
 		</data>
 		<key>Modules/CorePayments.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		g+pf0dz5n8c8pemTdqT+ddb5BQY=
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/CorePayments.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/CorePayments.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2LHcmmseAYcwECTaSyfD44kaUlo=
+		BQHNKnDpaqh7Wbtpqx3aXQjmnB4=
 		</data>
 		<key>Modules/CorePayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		g+pf0dz5n8c8pemTdqT+ddb5BQY=
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/CorePayments.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/CorePayments.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Sg7BBjhVnhYuZ7Rg1AVrxNtC0u0=
+		mU401dvbrupnByTbSP/sB4O7lrE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -74,7 +74,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jAovugBl1fh1WUGJh4JgiiMi8TYFx/55tjqBI4ifEo4=
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/CorePayments.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -102,14 +102,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uEZwTVzvKOGPkAOoXcMrTDE/mMd4py0Ly0whIRqiCwM=
+			8c4v0AhghNvP8U58gK2Wi9SW1H/HtcODZPBZObBWNkQ=
 			</data>
 		</dict>
 		<key>Modules/CorePayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jAovugBl1fh1WUGJh4JgiiMi8TYFx/55tjqBI4ifEo4=
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/CorePayments.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -137,7 +137,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BnsdebWaODijvBtmZTX5EqY6F/pLgXxWHUqMB/kIVAg=
+			+KDQw6igH3OUSEB1GYEhDa7OlcsusIw+Xo75HYnJBXc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

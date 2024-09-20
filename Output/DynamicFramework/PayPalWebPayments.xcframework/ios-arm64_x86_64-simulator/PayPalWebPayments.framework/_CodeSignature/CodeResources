@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LEyMwutpZk1JOxx25LWb1sNiTn8=
+		qmoyE/FMdc85ut9MJod6ljxIgqY=
 		</data>
 		<key>Modules/PayPalWebPayments.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		zc9h2gT2/zLohgMOLNfBgzMYXPo=
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/PayPalWebPayments.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/PayPalWebPayments.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/rA0seXoDdQAYonmIuv8OMOYz3E=
+		xz6Lk3/IGerNrQEeufSKrJTGC3k=
 		</data>
 		<key>Modules/PayPalWebPayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		zc9h2gT2/zLohgMOLNfBgzMYXPo=
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/PayPalWebPayments.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/PayPalWebPayments.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		b+L/FoB9ltY2s3mCvP7ND1Bq7j4=
+		abnpdGxMGm68Xpj/yYBI3FBs6LI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -74,7 +74,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WRN8AEHcDeajm86U9V6aYeT4MUA23Kc23GfVQZaH8e8=
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/PayPalWebPayments.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -102,14 +102,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			z6MDpOwhBlZJmB2vyEErb9xLJX4eC0eqU1BJ+pFSgHQ=
+			jEmeBM86x/9/9kaPlW0px71fx3A/BVLLpwxmHpNIq8A=
 			</data>
 		</dict>
 		<key>Modules/PayPalWebPayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WRN8AEHcDeajm86U9V6aYeT4MUA23Kc23GfVQZaH8e8=
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/PayPalWebPayments.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -137,7 +137,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L3j7wrSvTRaZAIyzyW+Mj4UZG2g3o4e0FURjmecuGuA=
+			Di6mmXdv+Yx9ob75G2LDeYeqNiw9jA2bcLWVBF0PGPA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
